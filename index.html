@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigfoot.js Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/bigfoot-default.css">
+    <script type="text/javascript" src="dist/bigfoot.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bigfoot.js"></script>
+    
+</head>
+<body>
+    HI,<a href="#fn:1" rel="footnote">1</a> Trying to implement bigfoot</p>
+     <div class="footnotes">
+                <hr>
+                <ol>
+                    <li class="footnote" id="fn:1"><p>
+                        Aryan Dokania
+                    </p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dist/bigfoot.min.js"></script>
+    <script>
+      var bigfoot = $.bigfoot(
+        {
+            deleteOnUnhover: false,
+            preventPageScroll: false,
+            hoverDelay: 250
+        }
+    );
+    </script>
+</body>
+</html>
