@@ -1,29 +1,86 @@
+/* General Styles */
 body {
-  color: #000000;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  background-color: #e3f2fd; /* Soft light blue background */
+  color: #333;
+  margin: 0;
   padding: 20px;
-  background-color: #55b5d8;
 }
 
-p {
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #ffffff, #e1e6eb); /* Gradient background */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* Title Styles */
+.title {
+  text-align: center;
+  color: #1e3a8a; /* Dark blue shade for the title */
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
+/* Team Introductions */
+.team-introductions p {
+  background: #ffffff; /* White background for team sections */
+  border-left: 4px solid #1e40af; /* Dark blue accent on the left */
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.team-introductions p:hover {
+  background: #f8d2d9; /* Light pink background on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Link Styles */
+a {
+  color: #1e40af; /* Dark blue for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+  color: #ec4f83; /* Light pink on hover */
+}
+
+/* Footnotes Styles */
 .footnotes {
-  border-top: 1px solid #7c5959;
   margin-top: 30px;
-  padding-top: 20px;
-  font-size: 0.9em;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for footnotes */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .footnotes ol {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
-.footnotes li {
+.footnote {
   margin-bottom: 10px;
+  padding: 10px;
+  background: #e1f5fe; /* Light blue for footnote items */
+  border-left: 4px solid #1e3a8a; /* Dark blue accent on left */
+  border-radius: 8px;
 }
 
+/* Reverse Footnote Style */
+.reversefootnote {
+  color: #888;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+.reversefootnote:hover {
+  color: #1e40af; /* Change color on hover */
+}

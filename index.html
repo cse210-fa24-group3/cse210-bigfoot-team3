@@ -8,32 +8,65 @@
     <link rel="stylesheet" href="dist/bigfoot-default.css">
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/bigfoot.js"></script>
-    
 </head>
 <body>
-    Hi,<a href="#fn:1" id="fnref:1">1</a> Trying to implement bigfoot</p>
-     <div class="footnotes">
-                <hr>
-                <ol>
-                    <li class="footnote" id="fn:1"><p>
-                        Aryan Dokania<a href="#fnref:1" title="return to article" class="reversefootnote"></a>
-                    </p></li>
-                </ol>
-            </div>
+    <div class="container">
+        <h1 class="title">Meet Our Team</h1>
+        
+
+        <div class="team-introductions">
+            <p><strong>Sneha:</strong> Sneha is a full-stack developer with expertise in modern web technologies. Proficient in <a href="#fn:2" id="fnref:2">ReactJS</a> and <a href="#fn:3" id="fnref:3">NextJS</a>, she excels at creating dynamic user interfaces. Her experience with <a href="#fn:4" id="fnref:4">MongoDB</a> and <a href="#fn:5" id="fnref:5">ExpressJS</a> makes her a valuable asset for building scalable applications.</p>
+            
+            <p><strong>Amy:</strong> Amy is a versatile software engineer with a passion for front-end development. She is skilled in <a href="#fn:6" id="fnref:6">React</a> and <a href="#fn:7" id="fnref:7">Vue.js</a>, and employs <a href="#fn:8" id="fnref:8">Bulma CSS</a> for elegant UI design.</p>
+
+            <p><strong>Venu:</strong> Venu is a highly skilled full-stack developer with extensive knowledge of <a href="#fn:9" id="fnref:9">Node.js</a> and <a href="#fn:10" id="fnref:10">Java</a>. Her background in <a href="#fn:11" id="fnref:11">React</a> and <a href="#fn:12" id="fnref:12">Flutter</a> enables her to create robust mobile applications.</p>
+
+            <p><strong>Keqian:</strong> Keqian is a motivated developer specializing in web technologies. With skills in <a href="#fn:13" id="fnref:13">React</a> and <a href="#fn:14" id="fnref:14">Node.js</a>, he focuses on building efficient applications.</p>
+
+            <p><strong>Aryan:</strong> Aryan is an enthusiastic developer with a strong foundation in mobile app development. His expertise in <a href="#fn:15" id="fnref:15">React</a> and <a href="#fn:16" id="fnref:16">Django</a> positions him well for creating feature-rich applications.</p>
+
+            <p><strong>Andrew:</strong> Andrew is a detail-oriented engineer with experience in various programming languages. Proficient in <a href="#fn:17" id="fnref:17">Python</a> and <a href="#fn:18" id="fnref:18">Java</a>, he excels at test automation.</p>
+
+            <p><strong>Krithika:</strong> Krithika is a budding data scientist and developer, skilled in <a href="#fn:19" id="fnref:19">Python</a> and <a href="#fn:20" id="fnref:20">JavaScript</a>. Her knowledge of <a href="#fn:21" id="fnref:21">HTML</a> and <a href="#fn:22" id="fnref:22">CSS</a> enables her to analyze data effectively.</p>
+        </div>
+
+        <div class="footnotes">
+            <hr>
+            <ol>
+                
+                <li class="footnote" id="fn:2"><p>ReactJS: A JavaScript library for building user interfaces.</p></li>
+                <li class="footnote" id="fn:3"><p>NextJS: A React framework for production.</p></li>
+                <li class="footnote" id="fn:4"><p>MongoDB: A document database for storing JSON-like data.</p></li>
+                <li class="footnote" id="fn:5"><p>ExpressJS: A web application framework for Node.js.</p></li>
+                <li class="footnote" id="fn:6"><p>React: A library for building user interfaces.</p></li>
+                <li class="footnote" id="fn:7"><p>Vue.js: A progressive framework for building user interfaces.</p></li>
+                <li class="footnote" id="fn:8"><p>Bulma CSS: A modern CSS framework based on Flexbox.</p></li>
+                <li class="footnote" id="fn:9"><p>Node.js: A JavaScript runtime built on Chrome's V8 engine.</p></li>
+                <li class="footnote" id="fn:10"><p>Java: A high-level programming language.</p></li>
+                <li class="footnote" id="fn:11"><p>React: A JavaScript library for building user interfaces.</p></li>
+                <li class="footnote" id="fn:12"><p>Flutter: An open-source UI software development toolkit.</p></li>
+                <li class="footnote" id="fn:13"><p>React: A JavaScript library for building user interfaces.</p></li>
+                <li class="footnote" id="fn:14"><p>Node.js: JavaScript runtime for server-side development.</p></li>
+                <li class="footnote" id="fn:15"><p>React: A JavaScript library for building user interfaces.</p></li>
+                <li class="footnote" id="fn:16"><p>Django: A high-level Python web framework.</p></li>
+                <li class="footnote" id="fn:17"><p>Python: A high-level programming language.</p></li>
+                <li class="footnote" id="fn:18"><p>Java: A high-level programming language.</p></li>
+                <li class="footnote" id="fn:19"><p>Python: A high-level programming language.</p></li>
+                <li class="footnote" id="fn:20"><p>JavaScript: A high-level programming language.</p></li>
+                <li class="footnote" id="fn:21"><p>HTML: The standard markup language for creating web pages.</p></li>
+                <li class="footnote" id="fn:22"><p>CSS: A stylesheet language used for describing the presentation of a document.</p></li>
+            </ol>
         </div>
     </div>
-   
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="dist/bigfoot.min.js"></script>
     <script type="text/javascript">
-        var bigfoot = $.bigfoot(
-            {
-                // deleteOnUnhover: false,
-                // preventPageScroll: false,
-                // hoverDelay: 250
-                activateOnHover: true
-            }
-        );
+        var bigfoot = $.bigfoot({
+            activateOnHover: true,  // Activate footnotes on hover
+            hoverDelay: 200, // Optional: Delay before showing footnote
+            deleteOnUnhover: true // Footnotes disappear when not hovered
+        });
     </script>
 </body>
 </html>
