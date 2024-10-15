@@ -6,18 +6,17 @@
     <title>Bigfoot.js Test</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="dist/bigfoot-default.css">
-    <script type="text/javascript" src="dist/bigfoot.js"></script>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/bigfoot.js"></script>
     
 </head>
 <body>
-    HI,<a href="#fn:1" rel="footnote">1</a> Trying to implement bigfoot</p>
+    Hi,<a href="#fn:1" id="fnref:1">1</a> Trying to implement bigfoot</p>
      <div class="footnotes">
                 <hr>
                 <ol>
                     <li class="footnote" id="fn:1"><p>
-                        Aryan Dokania
+                        Aryan Dokania<a href="#fnref:1" title="return to article" class="reversefootnote"></a>
                     </p></li>
                 </ol>
             </div>
@@ -26,14 +25,15 @@
    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="dist/bigfoot.min.js"></script>
-    <script>
-      var bigfoot = $.bigfoot(
-        {
-            deleteOnUnhover: false,
-            preventPageScroll: false,
-            hoverDelay: 250
-        }
-    );
+    <script type="text/javascript">
+        var bigfoot = $.bigfoot(
+            {
+                // deleteOnUnhover: false,
+                // preventPageScroll: false,
+                // hoverDelay: 250
+                activateOnHover: true
+            }
+        );
     </script>
 </body>
 </html>
