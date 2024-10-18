@@ -5,12 +5,12 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   display: inline-block;
+  border: 1px solid rgba(110, 110, 110, 0.5);
   padding: 0.35em;
   margin: 0 0.1em 0 0.2em;
-  border: none;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
   cursor: pointer;
-  background-color: rgba(110, 110, 110, 0.2);
+  background-color: rgba(2, 101, 248, 0.2);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   font-size: 1rem;
@@ -22,6 +22,8 @@
           transition-property: background-color;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
+transition: background-color 1s, transform 0.25s, box-shadow 0.25s;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .bigfoot-footnote__button:hover, .bigfoot-footnote__button:focus {
   outline: none;
